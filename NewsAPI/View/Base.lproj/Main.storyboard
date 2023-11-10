@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i0a-Py-wDU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="GWy-9u-l16">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i0a-Py-wDU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bC7-kr-lfV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IEq-7b-VXB" kind="relationship" relationship="rootViewController" id="p9S-JK-TzA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQi-Jh-EC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="81.696428571428569"/>
+        </scene>
+        <!--Apple News-->
+        <scene sceneID="Yvz-Wn-4gg">
+            <objects>
+                <collectionViewController id="IEq-7b-VXB" customClass="CollectionViewController" customModule="NewsAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="A1P-J6-kSb" userLabel="Collection Grid View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tE0-UE-tNj">
+                            <size key="itemSize" width="408" height="231"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionCell" id="PNm-Si-FBJ" customClass="MyCollectionCell" customModule="NewsAPI" customModuleProvider="target">
+                                <rect key="frame" x="3" y="0.0" width="408" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9Ci-xJ-7RA">
+                                    <rect key="frame" x="0.0" y="0.0" width="408" height="231"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="408" height="231"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="IEq-7b-VXB" id="u7q-nm-wKe"/>
+                            <outlet property="delegate" destination="IEq-7b-VXB" id="PNP-by-d7S"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Apple News" id="kH5-rj-FwS"/>
+                    <connections>
+                        <outlet property="collectionGridView" destination="A1P-J6-kSb" id="GU8-4Y-Afi"/>
+                        <segue destination="yqa-ta-yV3" kind="show" identifier="goToWeb" id="Z0e-wr-q5I"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nwj-3u-95w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827.536231884058" y="81.696428571428569"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Tfg-zF-0D7">
+            <objects>
+                <viewController id="yqa-ta-yV3" customClass="WebViewController" customModule="NewsAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M74-XV-RRi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-90-5AF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SQO-z5-ZU3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kk1-90-5AF" firstAttribute="trailing" secondItem="SQO-z5-ZU3" secondAttribute="trailing" id="PxE-rF-3Th"/>
+                            <constraint firstItem="Kk1-90-5AF" firstAttribute="top" secondItem="SQO-z5-ZU3" secondAttribute="top" id="rBI-3x-neX"/>
+                            <constraint firstItem="Kk1-90-5AF" firstAttribute="bottom" secondItem="SQO-z5-ZU3" secondAttribute="bottom" id="uyH-9D-5Bp"/>
+                            <constraint firstItem="Kk1-90-5AF" firstAttribute="leading" secondItem="SQO-z5-ZU3" secondAttribute="leading" id="veK-1a-Anc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H3i-gS-gb8"/>
+                    <connections>
+                        <outlet property="webView" destination="Kk1-90-5AF" id="gqT-57-B0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4g-PY-xkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602.8985507246377" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

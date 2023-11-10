@@ -1,0 +1,22 @@
+PODS:
+  - ImageSizeFetcher (0.9.1)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+
+DEPENDENCIES:
+  - ImageSizeFetcher
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ImageSizeFetcher
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ImageSizeFetcher: 060a5f4765137899365f358cecb172c0e47e8e5a
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+
+PODFILE CHECKSUM: 29e6faee5fc43a547ac5348606e3f190722053e0
+
+COCOAPODS: 1.11.3
