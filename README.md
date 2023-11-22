@@ -1,9 +1,9 @@
 
-## Goal Of The Project
+## 🎯 Goal Of The Project
 
 The aim of this tutorial is to guide you through UIKit development using the Model-View-Controller (MVC) architecture. Topics covered include making API calls, handling JSON parsing, integrating UI components such as UICollectionView, and incorporating UIWebView for web content within an MVC structure.
 
-## Screenshots
+## ✅ Screenshots
 
 <p align="left">
 <img src="https://github.com/hadiachaudhary10/NewsAPI/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20Max%20-%202023-11-10%20at%2014.25.13.png" width="200" height="400" />
@@ -14,14 +14,32 @@ The aim of this tutorial is to guide you through UIKit development using the Mod
 Experienced iOS developer proficient in Swift, Objective-C, and SwiftUI, seeking opportunities to contribute technical expertise and pursue growth in a dynamic organization.
 
 
-## Authors
+## :woman_technologist: Authors
 
 - [@hadiachaudhary10](https://github.com/hadiachaudhary10)
 
 
-## 🛠 Skills Utilised
+## 💯 Concepts Utilised
 Swift, API Calls, MVC Architecture
 
 
-
-[![My Skills](https://skills.thijs.gg/icons?i=swift)](https://skills.thijs.gg)
+## 🛠 Skills
+<p align="left">
+  <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> 
+  &nbsp; &nbsp;
+  <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/>
+  &nbsp; &nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
+  &nbsp; &nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> 
+  &nbsp; &nbsp;
+  <img src="https://www.vectorlogo.zone/logos/apple_objectivec/apple_objectivec-icon.svg" alt="objectivec" width="40" height="40"/>
+  &nbsp; &nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+  &nbsp; &nbsp;
+  <img src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg" alt="realm" width="40" height="40"/>
+  &nbsp; &nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/>
+  &nbsp; &nbsp;
+  <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/>
+</p>
